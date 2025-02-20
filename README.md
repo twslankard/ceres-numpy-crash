@@ -9,7 +9,7 @@ For some reason, when used in conjunction with numpy, the script `ceres_repro.py
 
 The notable factors appear to be
 
-1. Numpy 1.26.4 (which uses a particular version of https://github.com/intel/x86-simd-sort). Upgrading numpy seems to resolve the problem.
+1. Numpy 1.26.4 (which uses a particular version of https://github.com/intel/x86-simd-sort). Upgrading numpy seems to resolve the problem. The commit `3dd2d13e7ad7bd0285a58bf7162bb01748ca2017` also seems to resolve the issue.
 2. Ceres (provided by apt.) Building Ceres using another source (e.g. vcpkg) seems to resolve the problem.
 3. A native extension built with pybind11 that throws an exception from C++.
 
