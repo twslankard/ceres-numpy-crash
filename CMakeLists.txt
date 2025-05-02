@@ -17,7 +17,7 @@ pybind11_add_module(_bindings src/cpp/main.cpp)
 
 target_link_libraries(_bindings
   PRIVATE
-    Ceres::ceres
+    unwind
   )
   
 set_target_properties(_bindings PROPERTIES
